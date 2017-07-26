@@ -1,0 +1,132 @@
+<!Doctype html>
+
+<html>
+	<head>
+		<meta charset= "utf-8">
+		<meta name= "robots" content= "all">
+		<meta name= "keywords" content= "">
+		<meta name= "description" content= "">
+		<meta name= "format-detection" content= "telphone=no, email=no">
+		<meta http-equiv= "Cache-Control" content= "no-transform">
+		<meta name= "apple-touch-fullscreen" content= "yes">
+		<meta name= "apple-mobile-web-app-capable" content= "yes">
+		<meta name= "apple-mobile-web-app-status-bar-style" content= "black-translucent">
+		<title>超阅游戏</title>
+		<script src= "js/flexible.js"></script>
+		<link rel= "shortcut icon" type= "image/x-icon" href= "">
+		<link rel= "stylesheet" type= "text/css" href= "css/integral.css">
+	</head>
+
+	<body>
+		<div class= "integral_num">
+			<div class= "integral_num_user">
+				<img src="images/user_head.jpg" alt="">
+				<span>积分：<em>88</em> +</span>
+			</div>
+			<div id= "integral_button" class= "integral_button">兑换记录</div>
+		</div>
+
+		<div id= "integral_ad" class= "integral_ad">
+			<img src= "images/integral_ad.jpg" alt= "">
+		</div>
+
+		<ul class= "integral_voucher clearfix">
+			<li id= "flow" title= "10元流量卡">
+				<div class= "integral_voucher_10"></div>
+				<span class= "integral_button">2000兑换</span>
+			</li>
+			<li id= "bill" title= "20元话费券">
+				<div class= "integral_voucher_20"></div>
+				<span class= "integral_button">2000兑换</span>
+			</li>
+		</ul>
+
+		<ul id= "nav" class= "nav clearfix">
+			<li class= "">
+				<i class= "nav_recommend"></i><span>推荐</span>
+			</li>
+			<li class= "selected">
+				<i class= "nav_integral"></i><span>积分商城</span>
+			</li>
+			<li class= "">
+				<i class= "nav_packs"></i><span>礼包</span>
+			</li>
+			<li class= "">
+				<i class= "nav_mine"></i><span>我的</span>
+			</li>
+		</ul>
+		<div class= "nav_placeholder"></div>
+
+		<!-- 以下为弹窗 -->
+		<div id= "recharge_calls" class= "alert_wrap" style= "display: none;">
+			<div class= "recharge_calls">
+				<p class= "alert_tit">充值话费</p>
+				<input id= "recharge_calls_input" class= "alert_input" type= "tel" placeholder= "请输入手机号">
+				<em id= "recharge_calls_error" class= "alert_input_error">！手机号码格式错误</em>
+				<div class= "alert_button clearfix">
+					<button id= "recharge_calls_no" class= "no">取消</button><button id= "recharge_calls_yes" class= "yes">确定</button>
+				</div>
+			</div>
+		</div>
+
+		<div id= "red_envelope" class= "alert_wrap" style= "display: none;">
+			<div class= "red_envelope">
+				<div class= "red_envelope_cont">
+					<p class= "alert_tit">领取红包</p>
+					<img src= "images/red_envelope_cont_qrcode.jpg" alt= "">
+					<span>添加二维码领取红包</span>
+				</div>
+				<i class= "alert_close"></i>
+			</div>
+		</div>
+
+		<div id= "receive_xxx" class= "alert_wrap" style= "display: none;">
+			<div class= "receive_xxx">
+				<p class= "alert_tit">领取<em>XXX</em></p>
+				<span>请务必输入正确信息，以便收到奖品</span>
+				<input class= "alert_input" type="text" placeholder="请输入收货人名称">
+				<input id= "receive_xxx_telephone" class= "alert_input" type="tel" placeholder="请输入手机号">
+				<em id= "alert_input_error" class= "alert_input_error">！手机号码格式错误</em>
+				<input class= "alert_input" type="text" placeholder="请输入收货地址">
+				<div class= "alert_button clearfix">
+					<button id= "alert_button_no" class= "no">取消</button><button id= "alert_button_yes" class= "yes">确定</button>
+				</div>
+			</div>
+		</div>
+
+		<div id= "flow_win" class= "alert_wrap" style= "display: none;">
+			<div class= "confirm_exchange">
+				<img src="images/confirm_exchange_img.jpg" alt="">
+				<span>是否确认兑换 “10元流量” ？</span>
+				<div class= "alert_button clearfix">
+					<button id= "all_no" class= "no">取消</button><button id= "flow_win_yes" class= "yes">确定</button>
+				</div>
+			</div>
+		</div>
+
+		<div id= "bill_win" class= "alert_wrap" style= "display: none;">
+			<div class= "confirm_exchange">
+				<img src="images/confirm_exchange_img.jpg" alt="">
+				<span>是否确认兑换 “20元话费” ？</span>
+				<div class= "alert_button clearfix">
+					<button id= "all_no" class= "no">取消</button><button id= "bill_win_yes" class= "yes">确定</button>
+				</div>
+			</div>
+		</div>
+
+		<div id= "earn_integral" class= "alert_wrap" style= "display: none;">
+			<div class= "earn_integral">
+				<div class= "earn_integral_cont">
+					<img src="images/earn_integral_img.jpg" alt="">
+					<span>积分不足，兑换失败</span>
+					<div class= "alert_button clearfix">
+						<button id= "earn_integral_earn" class= "yes">赚积分</button>
+					</div>
+				</div>
+				<i id= "earn_integral_close" class= "alert_close"></i>
+			</div>
+		</div>
+
+		<script src= "js/integral.js"></script>
+	</body>
+</html>
