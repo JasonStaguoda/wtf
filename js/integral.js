@@ -100,7 +100,7 @@ function dd() {
 	var flow_win_yes = document.getElementById("flow_win_yes");
 
 	flow_win_yes.onclick = function() {
-		document.write("<h1 style= 'text-align: center; font-size: 260%; line-height: 200%;'>不充钱还想领流量？？<br>臭屌丝</h1>");
+		document.write("<h1 style= 'text-align: center; font-size: 200%; line-height: 200%;'>不充钱还想领流量？？<br>臭屌丝</h1>");
 	}
 }
 
@@ -108,7 +108,7 @@ function ee() {
 	var bill_win_yes = document.getElementById("bill_win_yes");
 
 	bill_win_yes.onclick = function() {
-		document.write("<h1 style= 'text-align: center; font-size: 260%; line-height: 200%;'>不充钱还想领话费？？<br>臭屌丝</h1>");
+		document.write("<h1 style= 'text-align: center; font-size: 200%; line-height: 200%;'>不充钱还想领话费？？<br>臭屌丝</h1>");
 	}
 }
 
